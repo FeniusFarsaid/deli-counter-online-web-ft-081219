@@ -4,12 +4,11 @@ def line(people_in_line = [])
   if people_in_line.length == 0 
     puts "The line is currently empty."
   else 
-    number_people_in_line =[]
+    number_people_in_line = []
     people_in_line.each_with_index do |name, index|
       phrase = "#{index + 1}. #{name}"
       number_people_in_line.push(phrase)
-    end 
-    
+  end 
     puts "The line is currently: #{number_people_in_line.join(" ")}"
   end  
 end 
@@ -27,7 +26,5 @@ def now_serving(people_in_line)
   else 
     puts "Currently serving #{people_in_line.first}."
     people_in_line.shift
-    
   end 
-  
 end 
